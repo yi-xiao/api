@@ -15,6 +15,9 @@ app.all('*', function (req, res, next) {
 })
 app.get('/booklist',require('./router/booklist'));
 app.get('/booktitles',require('./router/booktitles'));
+app.get('/bookread',require('./router/bookread'));
+app.get('/charactors',require('./router/charactors'));
+app.get('/search',require('./router/search'));
 
 app.listen(3334, () => {
     console.log('yyy')
